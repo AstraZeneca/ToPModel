@@ -2,7 +2,7 @@ simdata.zip
 
 	Uncompress zip to obtain simdata.csv. Provides simulated participant level data to fit a ToP model similar to the manuscript.
 
-simdata.csv:
+Variables in simdata.csv
 
 		id = participant ID
 		z = 1 if received treatment, else 0
