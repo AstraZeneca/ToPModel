@@ -37,7 +37,7 @@ run;
 		select count(distinct id) into :n trimmed from simdata;
 	quit;
 	ods select none;
-	*Resample with replacementwith each size equivalence to the total sample size from the original data;
+	*Resample with replacement with each size equivalence to the total sample size from the original data;
 	proc surveyselect data=simdata out=bootsamp method=urs reps=&NBOOT seed=7442 sampsize=&n outhits;
 		cluster z id;
 	run;
