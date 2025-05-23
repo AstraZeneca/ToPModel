@@ -12,7 +12,7 @@ SAS V9.4 or higher.
 **Instructions to run code**
 
 1. Open ToPModel.sas in SAS V9.4 or higher.
-2. Set macro variables on lines 1-2 as described in ToPMOdel.sas.
+2. Set macro variables on lines 1-2 as described in ToPModel.sas.
 3. Run code.
 
 **Variables in simdata.csv:**
