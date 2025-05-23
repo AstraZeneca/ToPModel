@@ -1,8 +1,19 @@
-**Simulated data**
+**Software requirements**
 
-Uncompress simdata.zip to obtain simdata.csv. This provides simulated participant level data to fit a ToP model similar to the manuscript.
+SAS V9.4 or higher.
 
-Variables in simdata.csv:
+**Installation**
+
+1. Download and uncompress simdata.zip to obtain simdata.csv. This provides simulated participant level data to fit a ToP model similar to the manuscript.
+2. Download ToPModel.sas. This provides SAS code to fit the ToP model to simdata.csv and generate efficacy point estimates and bootstrapped two-sided 90% confidence intervals.
+
+**Instructions to run code**
+
+1. Open ToPModel.sas in SAS V9.4 or higher.
+2. Set macro variables on lines 1-2 as described in ToPMOdel.sas.
+3. Run code.
+
+**Variables in simdata.csv:**
 
 - id = participant ID
 
@@ -19,9 +30,9 @@ Variables in simdata.csv:
 
 - wtg_lnab = log10(wtg_nab+1)
 
-**ToPModel.sas**
+**Results**
 
-SAS code to fit the ToP model to simdata.csv and generate efficacy point estimates and bootstrapped two-sided 90% confidence intervals. Developed using SAS 9.4. Set macro variables on lines 1-2 as described. In the below example NBOOT is set to 10.
+In the below example NBOOT is set to 10.
 
 	%let DPATH = <SET TO LOCAL FILE PATH WHERE SIMDATA.CSV IS SAVED.>;
  	%let NBOOT = <SET TO NUMBER OF BOOTSTRAP REPLICATES. CAN BE SET TO SMALLER NUMBER (E.G. 10) FOR QUICK RUN TIME.>;
