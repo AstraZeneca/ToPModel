@@ -58,7 +58,7 @@ In the below example NBOOT is set to 10.
 		ods output hazardratios = hrfull;
 	run;
 
-![image](https://github.com/user-attachments/assets/e7bc9c75-86dc-4634-a973-14f409eaa29b)
+![ModelOutput](https://github.com/user-attachments/assets/cc578c6d-1ade-49d1-a0ab-6386ef372c32)
 
 	data efffull;
 		set hrfull;
@@ -121,6 +121,4 @@ In the below example NBOOT is set to 10.
 		yaxis values=(0 to 100 by 10) label='Efficacy (%)';
 	run;
 
- ![image](https://github.com/user-attachments/assets/d6ec5dab-2e6b-4435-9e11-95a5cab65f96)
-
-
+<img width="480" alt="ModelPlot" src="https://github.com/user-attachments/assets/a9ac75ea-3048-455f-8612-66ed3b491d00" />
