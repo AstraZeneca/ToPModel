@@ -13,7 +13,7 @@ SAS V9.4 or higher.
 
 1. Open ToPModel.sas in SAS V9.4 or higher.
 2. Set macro variables on lines 1-2 as described in ToPModel.sas.
-3. Run code.
+3. Run code. Run time will highly dependent on the number of bootstrap samples defined.
 
 **Variables in simdata.csv:**
 
@@ -34,7 +34,7 @@ SAS V9.4 or higher.
 
 **Results**
 
-In the below example NBOOT is set to 10.
+In the below example NBOOT is set to 10. This take approximately 20 seconds to run.
 
 	%let DPATH = <SET TO LOCAL FILE PATH WHERE SIMDATA.CSV IS SAVED.>;
  	%let NBOOT = <SET TO NUMBER OF BOOTSTRAP REPLICATES. CAN BE SET TO SMALLER NUMBER (E.G. 10) FOR QUICK RUN TIME.>;
