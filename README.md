@@ -6,6 +6,8 @@ SAS V9.4 or higher.
 
 **Installation**
 
+Below download times should only take a few seconds.
+
 1. Download and uncompress simdata.zip to obtain simdata.csv. This provides simulated participant level data to fit a ToP model similar to the manuscript.
 2. Download ToPModel.sas. This provides SAS code to fit the ToP model to simdata.csv and generate efficacy point estimates and bootstrapped two-sided 90% confidence intervals.
 
